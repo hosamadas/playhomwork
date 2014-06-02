@@ -1,0 +1,17 @@
+
+@(message: String)
+
+@main("Solve Equation") {
+    
+    <h1>a X^2 + b X + c</h1>
+    
+    <form method="get" action="@routes.Application.index()">
+	    a<input type="text" id="txt_a" name="txt_a">
+	    b<input type="text" id="txt_b" name="txt_b">
+	    c<input type="text" id="txt_c" name="txt_c">
+	    <br/><br/>
+	    <input type="submit" value="Solve">
+	</form>
+	<br/><br/>
+	@message
+}
